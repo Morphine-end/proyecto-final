@@ -1,0 +1,12 @@
+.feed{ // lo que hay detras de los mensajes
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.message{ // color del mensaje de los mensaje que se recibe
+    flex-direction: column;
+    margin: 10px 0;
+    background-color: darkorange;
+    border-radius: 100px;
+}

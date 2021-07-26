@@ -1,0 +1,59 @@
+.message-Container-fluid{
+    display: flex;
+    height: auto;
+    width: 70%;
+    min-width: 400px;
+    border-radius: 5px;
+    align-items:stretch;
+    background-color: #eee;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.26), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.isOwnMessageContainer{ // fondo del propio mensaje
+    background-color: #29724e;
+    border-radius: 20px;
+    margin-left: 500px;
+    
+}
+
+.message-Data{
+    flex: 1;
+    padding: 10px;
+    font-size: 20em;
+}
+
+.sender{ //color de usuario recibido
+    display: block;
+    color: rgb(119, 214, 226);
+    font-weight: bold;
+
+}
+
+.isOwnSender{
+    color: #7cec20; // color del usuario que envia
+    
+}
+
+.timestamp { // color del tiempo del usuario recibido
+    color: rgb(251, 255, 14);
+    font-style: italic;
+}
+
+.isOwnTimestamp{ //color del usuario que envia
+    color: #4FC3F7;
+}
+
+.message-Content{
+    height: auto;
+    flex: 9;
+    background-color: rgb(255, 5, 222);
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.isOwnMessageContent{
+    background-color: #223644; // color fondo mensaje 
+    border-radius: 20px;
+    color: #17f8f8; //color letras del mensaje
+}

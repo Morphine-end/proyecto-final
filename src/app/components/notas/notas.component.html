@@ -1,0 +1,36 @@
+<app-navbar> </app-navbar>
+<div class="container-fluid">
+  <div class="container">
+    <button class="btn mt-4 btn-dark" routerLink="/create-notas"> Redactar </button>
+    <div class="row mt-3">
+      <div class="card col" style="width: 18rem" *ngFor="let post of allPost" >
+        <button [routerLink]="['/post-content', post.id]">
+        <img
+          src="https://cdn2.unrealengine.com/Diesel%2Fblog%2Fepic-games-store-update%2FEGS_Social_Update_News-2560x1440-128a69890d92407b815582c1deba54450e5645f9.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{post.title}}</h5>
+          <p class="card-text text-break ">{{post.description}}</p>
+        </div> 
+        </button>
+      </div>
+
+      <div class="card col" style="width: 18rem">
+        <img
+          src="https://ichef.bbci.co.uk/news/976/cpsprodpb/13729/production/_112375697_1331db7a-17c0-4401-8cac-6a2309ff49b6.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
